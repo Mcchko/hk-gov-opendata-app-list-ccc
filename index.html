@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>幼兒中心查詢系統</title>
+    <title>資助獨立幼兒中心查詢系統</title>
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -469,7 +469,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>幼兒中心查詢系統</h1>
+            <h1>資助獨立幼兒中心查詢系統</h1>
             <p class="subtitle">香港資助幼兒中心位置及詳細資訊</p>
         </header>
         <main class="main-content">
@@ -506,14 +506,14 @@
             </section>
         </main>
         <footer class="footer">
-            <p>幼兒中心查詢系統 | 資料來源: 香港政府地理數據平台 | 支援桌面及流動裝置</p>
+            <p>資助獨立幼兒中心查詢系統 | 資料來源: 香港政府地理數據平台 | 支援桌面及流動裝置</p>
         </footer>
     </div>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script>
-        // 定義數據源 - 幼兒中心資料 (Point)
+        // 定義數據源 - 資助獨立幼兒中心資料 (Point)
         const DATA_SOURCE_URL = 'https://portal.csdi.gov.hk/server/services/common/swd_rcd_1629267205216_48300/MapServer/WFSServer?service=wfs&request=GetFeature&typenames=CCC&outputFormat=geojson';
         // 全局變量
         let map;
@@ -1133,7 +1133,7 @@
         // 首次加載顯示教程
         if (!localStorage.getItem('facilityTutorialShown')) {
             setTimeout(() => {
-                alert("歡迎使用幼兒中心查詢系統！\n\n• 點擊地圖上的設施標記可查看詳細資訊\n• 點擊列表中的設施名稱可展開/收起詳細資訊\n• 設施按數據集→地區→機構→年齡組別分層顯示\n• 可使用左上角圖層控制切換地圖樣式");
+                alert("歡迎使用資助獨立幼兒中心查詢系統！\n\n• 點擊地圖上的設施標記可查看詳細資訊\n• 點擊列表中的設施名稱可展開/收起詳細資訊\n• 設施按數據集→地區→機構→年齡組別分層顯示\n• 可使用左上角圖層控制切換地圖樣式");
                 localStorage.setItem('facilityTutorialShown', 'true');
             }, 1000);
         }
